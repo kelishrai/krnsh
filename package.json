@@ -1,0 +1,25 @@
+{
+  "name": "krnsh",
+  "displayName": "Kelish Rai's Note Syntax Highlighting",
+  "description": "Highlights different aspects of Kelish Rai's note collection",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "krnsh",
+      "aliases": ["KRNSH", "krnsh"],
+      "extensions": [".txt"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "krnsh",
+      "scopeName": "source.krnsh",
+      "path": "./syntaxes/krnsh.tmLanguage.json"
+    }]
+  }
+}

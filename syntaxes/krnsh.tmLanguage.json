@@ -1,0 +1,42 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "KRNSH",
+	"patterns": [
+        {
+            "include": "#body"
+        }
+    ],
+    "repository": {
+        "body": {
+            "patterns": [
+                {
+                    "name": "krnsh.comments",
+                    "begin": "(#|//|--|/\\*|<!--)\\s",
+                    "end": "(\\*/|-->|[^\n]*)",
+                    "flags": "s"
+                },
+                {
+                    "name": "krnsh.abbreviations",
+                    "match": "\\b(?:ad|al|bd|cl|db|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou)\\b"
+                },
+                {
+                    "name": "krnsh.links",
+                    "match": "\\b(?:https?|ftp):\/\/\\S+\\b"
+                },
+                {
+                    "name": "krnsh.comma",
+                    "match": ","
+                },
+                {
+                    "name": "krnsh.period",
+                    "match": "\\."
+                },
+                {
+                    "name": "krnsh.symbols",
+                    "match": "<|>|=|\/|\\+|-|\\*"
+                }
+            ]
+        }
+    },
+	"scopeName": "source.krnsh"
+}
