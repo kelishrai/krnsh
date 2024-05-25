@@ -1,9 +1,14 @@
 # KRNSH
 
-## install process
+### I doubt anyone will find this extension useful besides me. Still, here's the install process:
 
-1. download KRNSH and add it in "C:\Users\user-x\.vscode\extensions"
-2. in VS Code, "File" > "Preferences" > "Settings" > "Edit in settings.json", add following syntax:
+1. Download KRNSH
+2. Rename to "krnsh"
+3. Add krnsh in "C:\Users\user-x\.vscode\extensions"
+2. In VS Code, open settings.json and add following JSON
+    "files.associations": {
+        "*.txt": "krnsh",
+    },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -14,6 +19,12 @@
             },
             {
                 "scope": "krnsh.abbreviations",
+                "settings": {
+                    "foreground": "#4EC9B0",
+                }
+            },
+            {
+                "scope": "krnsh.conjunctions",
                 "settings": {
                     "foreground": "#4EC9B0",
                 }
@@ -44,9 +55,3 @@
             }
         ]
     },
-    "files.associations": {
-        "*.txt": "krnsh",
-    },
-3. rename KRNSH to krnsh
-
-That's all!

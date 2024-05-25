@@ -20,6 +20,10 @@
                     "match": "\\b(?:ad|al|bd|cl|db|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou)\\b"
                 },
                 {
+                    "name": "krnsh.conjunctions",
+                    "match": "\\b(?:and|but|or|so|because|since|where|thus|whereas)\\b"
+                },
+                {
                     "name": "krnsh.links",
                     "match": "\\b(?:https?|ftp):\/\/\\S+\\b"
                 },
