@@ -10,6 +10,10 @@
         "body": {
             "patterns": [
                 {
+                    "name": "krnsh.headings",
+                    "match": "#(?!\\s).*"
+                },
+                {
                     "name": "krnsh.comments",
                     "begin": "(#|//|--|/\\*|<!--)\\s",
                     "end": "(\\*/|-->|[^\n]*)",
@@ -28,12 +32,8 @@
                     "match": "\\b(?:https?|ftp):\/\/\\S+\\b"
                 },
                 {
-                    "name": "krnsh.comma",
-                    "match": ","
-                },
-                {
-                    "name": "krnsh.period",
-                    "match": "\\."
+                    "name": "krnsh.comma-period",
+                    "match": ",|\\."
                 },
                 {
                     "name": "krnsh.symbols",

@@ -3,7 +3,7 @@
 ### I doubt anyone will find this extension useful besides me. Still, here's the install process:
 
 1. Download KRNSH
-2. Rename to "krnsh"
+2. Rename KRNSH to "krnsh"
 3. Add krnsh in "C:\Users\user-x\.vscode\extensions"
 2. In VS Code, open settings.json and add following JSON
     "files.associations": {
@@ -11,6 +11,12 @@
     },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
+            {
+                "scope": "krnsh.headings",
+                "settings": {
+                    "foreground": "#aaaa00",
+                }
+            },
             {
                 "scope": "krnsh.comments",
                 "settings": {
@@ -36,15 +42,9 @@
                 }
             },
             {
-                "scope": "krnsh.comma",
+                "scope": "krnsh.comma-period",
                 "settings": {
-                    "foreground": "#C586C0",
-                }
-            },
-            {
-                "scope": "krnsh.period",
-                "settings": {
-                    "foreground": "#CE9178",
+                    "foreground": "#c87b3c",
                 }
             },
             {
