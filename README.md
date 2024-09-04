@@ -32,7 +32,7 @@
             {
                 "scope": "krnsh.conjunctions",
                 "settings": {
-                    "foreground": "#4EC9B0",
+                    "foreground": "#C586C0",
                 }
             },
             {

@@ -21,11 +21,11 @@
                 },
                 {
                     "name": "krnsh.abbreviations",
-                    "match": "\\b(?:ad|al|bd|cl|db|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou)\\b"
+                    "match": "\\b(?:ab|ad|al|bd|cl|db|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|rt|wg|sh)\\b"
                 },
                 {
                     "name": "krnsh.conjunctions",
-                    "match": "\\b(?:and|but|or|so|because|since|where|thus|whereas)\\b"
+                    "match": "\\b(?:and|but|or|so|because|since|where|thus|whereas|then)\\b"
                 },
                 {
                     "name": "krnsh.links",
@@ -37,7 +37,7 @@
                 },
                 {
                     "name": "krnsh.symbols",
-                    "match": "<|>|=|\/|\\+|-|\\*"
+                    "match": "<|>|=|\/|\\+|-|\\*|!|@|%"
                 }
             ]
         }
