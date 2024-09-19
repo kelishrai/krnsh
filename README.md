@@ -5,7 +5,7 @@
 1. Download KRNSH
 2. Rename KRNSH to "krnsh"
 3. Add krnsh in "C:\Users\user-x\.vscode\extensions"
-2. In VS Code, open settings.json and add following JSON
+4. In VS Code, open settings.json and add following JSON
     "files.associations": {
         "*.txt": "krnsh",
     },
@@ -52,6 +52,15 @@
                 "settings": {
                     "foreground": "#569CD6",
                 }
+            },
+            {
+                "scope": "krnsh.checklist-done",
+                "settings": {
+                    "foreground": "#3da753",
+                    "fontStyle": "strikethrough"
+                }
             }
         ]
     },
+
+### Thanks for reading lol

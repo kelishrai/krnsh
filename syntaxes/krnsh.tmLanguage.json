@@ -38,6 +38,10 @@
                 {
                     "name": "krnsh.symbols",
                     "match": "<|>|\\^|=|\/|\\+|-|\\*|!|@|%"
+                },
+                {
+                    "name": "krnsh.checklist-done",
+                    "match": "☑\\s.*"
                 }
             ]
         }
