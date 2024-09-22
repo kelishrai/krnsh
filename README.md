@@ -42,13 +42,13 @@
                 }
             },
             {
-                "scope": "krnsh.comma-period",
+                "scope": "krnsh.symbols-1",
                 "settings": {
                     "foreground": "#c87b3c",
                 }
             },
             {
-                "scope": "krnsh.symbols",
+                "scope": "krnsh.symbols-2",
                 "settings": {
                     "foreground": "#569CD6",
                 }

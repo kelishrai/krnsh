@@ -21,7 +21,7 @@
                 },
                 {
                     "name": "krnsh.abbreviations",
-                    "match": "\\b(?:ab|ad|al|bd|cl|db|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|rt|wg|sh)\\b"
+                    "match": "\\b(?:ab|ad|al|bd|cl|db|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh)\\b"
                 },
                 {
                     "name": "krnsh.conjunctions",
@@ -32,11 +32,11 @@
                     "match": "\\b(?:https?|ftp):\/\/\\S+\\b"
                 },
                 {
-                    "name": "krnsh.comma-period",
-                    "match": ",|\\."
+                    "name": "krnsh.symbols-1",
+                    "match": ",|\\.|:|'|\""
                 },
                 {
-                    "name": "krnsh.symbols",
+                    "name": "krnsh.symbols-2",
                     "match": "<|>|\\^|=|\/|\\+|-|\\*|!|@|%"
                 },
                 {
