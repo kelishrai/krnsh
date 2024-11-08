@@ -40,6 +40,10 @@
                     "match": "<|>|\\^|=|\/|\\+|-|\\*|!|@|%"
                 },
                 {
+                    "name": "krnsh.pgfn",
+                    "match": "pgfn\\s.*"
+                },
+                {
                     "name": "krnsh.checklist-done",
                     "match": "☑\\s.*"
                 }

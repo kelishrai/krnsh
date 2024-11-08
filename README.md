@@ -54,6 +54,12 @@
                 }
             },
             {
+                "scope": "krnsh.pgfn",
+                "settings": {
+                    "foreground": "#B5CEA8",
+                }
+            },
+            {
                 "scope": "krnsh.checklist-done",
                 "settings": {
                     "foreground": "#3da753",
