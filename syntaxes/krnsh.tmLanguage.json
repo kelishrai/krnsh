@@ -33,15 +33,19 @@
                 },
                 {
                     "name": "krnsh.symbols-1",
-                    "match": ",|\\.|:|'|\""
+                    "match": ",|\\.|:|'|\\\""
                 },
                 {
                     "name": "krnsh.symbols-2",
                     "match": "<|>|\\^|=|\/|\\+|-|\\*|!|@|%"
                 },
                 {
-                    "name": "krnsh.pgfn",
+                    "name": "krnsh.pg-file-name",
                     "match": "pgfn\\s.*"
+                },
+                {
+                    "name": "krnsh.new-line-continuation",
+                    "match": "^\\s*\\\\"
                 },
                 {
                     "name": "krnsh.checklist-done",

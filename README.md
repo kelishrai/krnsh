@@ -2,10 +2,9 @@
 
 ### I doubt anyone will find this extension useful besides me. Still, here's the install process:
 
-1. Download KRNSH
-2. Rename KRNSH to "krnsh"
-3. Add krnsh in "C:\Users\user-x\.vscode\extensions"
-4. In VS Code, open settings.json and add following JSON
+1. Download KRNSH and rename it to "krnsh"
+2. Add krnsh in "C:\Users\userX\.vscode\extensions"
+3. Finally, in VS Code, open settings.json and add following JSON
     "files.associations": {
         "*.txt": "krnsh",
     },
@@ -20,19 +19,19 @@
             {
                 "scope": "krnsh.comments",
                 "settings": {
-                    "foreground": "#6A9955",
+                    "foreground": "#6a9955",
                 }
             },
             {
                 "scope": "krnsh.abbreviations",
                 "settings": {
-                    "foreground": "#4EC9B0",
+                    "foreground": "#4ec9b0",
                 }
             },
             {
                 "scope": "krnsh.conjunctions",
                 "settings": {
-                    "foreground": "#C586C0",
+                    "foreground": "#c586c0",
                 }
             },
             {
@@ -50,13 +49,19 @@
             {
                 "scope": "krnsh.symbols-2",
                 "settings": {
-                    "foreground": "#569CD6",
+                    "foreground": "#569cd6",
                 }
             },
             {
-                "scope": "krnsh.pgfn",
+                "scope": "krnsh.pg-file-name",
                 "settings": {
-                    "foreground": "#B5CEA8",
+                    "foreground": "#b5cea8",
+                }
+            },
+            {
+                "scope": "krnsh.new-line-continuation",
+                "settings": {
+                    "foreground": "#f9f26c",
                 }
             },
             {
@@ -69,4 +74,4 @@
         ]
     },
 
-### Thanks for reading lol
+### Thanks for reading even though you might find no use of this extension XD
