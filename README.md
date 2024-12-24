@@ -56,6 +56,7 @@
                 "scope": "krnsh.pg-file-name",
                 "settings": {
                     "foreground": "#b5cea8",
+                    "fontStyle": "underline",
                 }
             },
             {
@@ -68,7 +69,7 @@
                 "scope": "krnsh.checklist-done",
                 "settings": {
                     "foreground": "#3da753",
-                    "fontStyle": "strikethrough"
+                    "fontStyle": "strikethrough",
                 }
             }
         ]

@@ -25,7 +25,7 @@
                 },
                 {
                     "name": "krnsh.conjunctions",
-                    "match": "\\b(?:and|but|or|so|because|since|where|thus|whereas|then)\\b"
+                    "match": "\\b(?:and|but|or|so|because|since|where|thus|whereas|then|aka)\\b"
                 },
                 {
                     "name": "krnsh.links",
