@@ -53,7 +53,7 @@
                 }
             },
             {
-                "scope": "krnsh.pg-file-name",
+                "scope": "krnsh.file-name",
                 "settings": {
                     "foreground": "#b5cea8",
                     "fontStyle": "underline",

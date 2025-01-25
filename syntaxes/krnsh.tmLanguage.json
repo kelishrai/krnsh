@@ -21,7 +21,7 @@
                 },
                 {
                     "name": "krnsh.abbreviations",
-                    "match": "\\b(?:ab|ad|al|bd|cl|db|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh)\\b"
+                    "match": "\\b(?:ab|ad|al|bd|cl|db|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg)\\b"
                 },
                 {
                     "name": "krnsh.conjunctions",
@@ -40,8 +40,8 @@
                     "match": "<|>|\\^|=|\/|\\+|-|\\*|!|@|%"
                 },
                 {
-                    "name": "krnsh.pg-file-name",
-                    "match": "pgfn\\s.*"
+                    "name": "krnsh.file-name",
+                    "match": "(nfn|pgfn)\\s.*"
                 },
                 {
                     "name": "krnsh.new-line-continuation",
