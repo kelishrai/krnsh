@@ -63,5 +63,20 @@
       }
     ]
   },
+4. Additionally, create notes.code-snippets folder in .vscode and add following JSON
+{
+  "to-do item": {
+    "prefix": "td",
+    "body": [
+        "☑$1",
+    ],
+  },
+  "single-line comment": {
+    "prefix": "c",
+    "body": [
+        "⫽ $1",
+    ],
+  }
+}
 
 ### Thanks for reading even though you might find no use of this extension XD

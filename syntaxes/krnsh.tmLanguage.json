@@ -19,7 +19,7 @@
         },
         {
           "name": "krnsh.variables",
-          "match": "\\b\\w+(?:X|Y|Z|A|B|C|-X|-Y|-Z|-A|-B|-C|-x|-y|-z|-a|-b|-c)\\b"
+          "match": "\\b\\w+(?:X|Y|Z|A|B|C|-X|-Y|-Z|-A|-B|-C|_X|_Y|_Z|_A|_B|_C|-x|-y|-z|-a|-b|-c|_x|_y|_z|_a|_b|_c)\\b"
         },
         {
           "name": "krnsh.links",
@@ -49,30 +49,11 @@
                 },
                 {
                   "name": "krnsh.variables",
-                  "match": "\\b\\w+(?:X|Y|Z|A|B|C|-X|-Y|-Z|-A|-B|-C|-x|-y|-z|-a|-b|-c)\\b"
+                  "match": "\\b\\w+(?:X|Y|Z|A|B|C|-X|-Y|-Z|-A|-B|-C|-x|-y|-z|-a|-b|-c|_x|_y|_z|_a|_b|_c)\\b"
                 }
               ]
             }
           }
-        },
-        {
-          "name": "krnsh.multi-line-comments",
-          "begin": "⫻\\*\\s+",
-          "end": "\\s+\\*⫻",
-          "patterns": [
-            {
-              "name": "krnsh.abbreviations",
-              "match": "\\b(?:ab|ad|al|bd|cl|db|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg)\\b"
-            },
-            {
-              "name": "krnsh.symbols",
-              "match": "<|>|\\^|=|/|\\\\|\\+|-|\\*|!|@|%|,|\\.|:|'|\\\"|`"
-            },
-            {
-              "name": "krnsh.variables",
-              "match": "\\b\\w+(?:X|Y|Z|A|B|C|-X|-Y|-Z|-A|-B|-C|-x|-y|-z|-a|-b|-c)\\b"
-            }
-          ]
         }
       ]
     }
