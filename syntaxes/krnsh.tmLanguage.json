@@ -1,58 +1,81 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "KRNSH",
-	"patterns": [
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "KRNSH",
+  "patterns": [
+    {
+      "include": "#body"
+    }
+  ],
+  "repository": {
+    "body": {
+      "patterns": [
         {
-            "include": "#body"
-        }
-    ],
-    "repository": {
-        "body": {
-            "patterns": [
+          "name": "krnsh.abbreviations",
+          "match": "\\b(?:ab|ad|al|bd|cl|db|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg)\\b"
+        },
+        {
+          "name": "krnsh.symbols",
+          "match": "<|>|\\^|=|/|\\\\|\\+|-|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$"
+        },
+        {
+          "name": "krnsh.variables",
+          "match": "\\b\\w+(?:X|Y|Z|A|B|C|-X|-Y|-Z|-A|-B|-C|-x|-y|-z|-a|-b|-c)\\b"
+        },
+        {
+          "name": "krnsh.links",
+          "match": "https?:\/\/\\S+"
+        },
+        {
+          "name": "krnsh.file-name",
+          "match": "(pgfn|nfn).*(\\.\\w+)\\b"
+        },
+        {
+          "name": "krnsh.checklist-done",
+          "match": "☑\\s.*"
+        },
+        {
+          "name": "krnsh.single-line-comments",
+          "match": "#\\s.*",
+          "captures": {
+            "0": {
+              "patterns": [
                 {
-                    "name": "krnsh.headings",
-                    "match": "#(?!\\s).*"
+                  "name": "krnsh.abbreviations",
+                  "match": "\\b(?:ab|ad|al|bd|cl|db|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg)\\b"
                 },
                 {
-                    "name": "krnsh.comments",
-                    "begin": "(#|//|--|/\\*|<!--)\\s",
-                    "end": "(\\*/|-->|[^\n]*)",
-                    "flags": "s"
+                  "name": "krnsh.symbols",
+                  "match": "<|>|\\^|=|/|\\\\|\\+|-|\\*|!|@|%|,|\\.|:|'|\\\"|`"
                 },
                 {
-                    "name": "krnsh.abbreviations",
-                    "match": "\\b(?:ab|ad|al|bd|cl|db|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg)\\b"
-                },
-                {
-                    "name": "krnsh.conjunctions",
-                    "match": "\\b(?:and|but|or|so|because|since|where|thus|whereas|then|aka)\\b"
-                },
-                {
-                    "name": "krnsh.links",
-                    "match": "\\b(?:https?|ftp):\/\/\\S+\\b"
-                },
-                {
-                    "name": "krnsh.symbols-1",
-                    "match": ",|\\.|:|'|\\\""
-                },
-                {
-                    "name": "krnsh.symbols-2",
-                    "match": "<|>|\\^|=|\/|\\+|-|\\*|!|@|%"
-                },
-                {
-                    "name": "krnsh.file-name",
-                    "match": "(nfn|pgfn)\\s.*"
-                },
-                {
-                    "name": "krnsh.new-line-continuation",
-                    "match": "^\\s*\\\\"
-                },
-                {
-                    "name": "krnsh.checklist-done",
-                    "match": "☑\\s.*"
+                  "name": "krnsh.variables",
+                  "match": "\\b\\w+(?:X|Y|Z|A|B|C|-X|-Y|-Z|-A|-B|-C|-x|-y|-z|-a|-b|-c)\\b"
                 }
-            ]
+              ]
+            }
+          }
+        },
+        {
+          "name": "krnsh.multi-line-comments",
+          "begin": "#\\*\\s+",
+          "end": "\\s+\\*#",
+          "patterns": [
+            {
+              "name": "krnsh.abbreviations",
+              "match": "\\b(?:ab|ad|al|bd|cl|db|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg)\\b"
+            },
+            {
+              "name": "krnsh.symbols",
+              "match": "<|>|\\^|=|/|\\\\|\\+|-|\\*|!|@|%|,|\\.|:|'|\\\"|`"
+            },
+            {
+              "name": "krnsh.variables",
+              "match": "\\b\\w+(?:X|Y|Z|A|B|C|-X|-Y|-Z|-A|-B|-C|-x|-y|-z|-a|-b|-c)\\b"
+            }
+          ]
         }
-    },
-	"scopeName": "source.krnsh"
+      ]
+    }
+  },
+  "scopeName": "source.krnsh"
 }
