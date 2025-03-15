@@ -13,8 +13,7 @@
             {
                 "scope": "krnsh.abbreviations",
                 "settings": {
-                    "foreground": "#4ec9b0",
-                    "fontStyle": "bold"
+                    "foreground": "#4ec9b0"
                 }
             },
             {
@@ -24,21 +23,15 @@
                 }
             },
             {
-                "scope": "krnsh.digits",
+                "scope": "krnsh.english",
                 "settings": {
-                    "fontStyle": "italic"
+                    "foreground": "#c586c0"
                 }
             },
             {
                 "scope": "krnsh.variables",
                 "settings": {
-                    "foreground": "#7db7d7"
-                }
-            },
-            {
-                "scope": "krnsh.new-variables",
-                "settings": {
-                    "foreground": "#7db7d7"
+                    "foreground": "#66a1c1"
                 }
             },
             {

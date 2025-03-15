@@ -11,19 +11,19 @@
             "patterns": [
                 {
                     "name": "krnsh.abbreviations",
-                    "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg|aka)\\s+"
+                    "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg|aka)\\b"
                 },
                 {
                     "name": "krnsh.symbols",
                     "match": "<|>|\\^|=|/|\\\\|\\+|-|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$|\\|"
                 },
                 {
-                    "name": "krnsh.digits",
-                    "match": "\\d"
+                    "name": "krnsh.english",
+                    "match": "\\b(?:or|and|where)\\b"
                 },
                 {
                     "name": "krnsh.variables",
-                    "match": "\\b[𝗔-𝗭𝗮-𝘇]\\w*\\b"
+                    "match": "\\b[\\w-]*[𝗔-𝗭𝗮-𝘇][\\w-]*\\b"
                 },
                 {
                     "name": "krnsh.links",
@@ -52,12 +52,12 @@
                                     "match": "<|>|\\^|=|/|\\\\|\\+|-|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$|\\|"
                                 },
                                 {
-                                    "name": "krnsh.digits",
-                                    "match": "\\d"
+                                    "name": "krnsh.english",
+                                    "match": "\\b(?:or|and|where)\\b"
                                 },
                                 {
                                     "name": "krnsh.variables",
-                                    "match": "\\b[𝗔-𝗭𝗮-𝘇]\\w*\\b"
+                                    "match": "\\b[\\w-]*[𝗔-𝗭𝗮-𝘇][\\w-]*\\b"
                                 },
                                 {
                                     "name": "krnsh.links",
