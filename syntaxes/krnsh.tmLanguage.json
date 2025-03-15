@@ -23,7 +23,11 @@
                 },
                 {
                     "name": "krnsh.variables",
-                    "match": "\\b([a-z]+[X-ZA-C]|\\w+[-_][X-ZA-Cx-zA-C])\\b"
+                    "match": "\\b(\\w+[X-ZA-C]|\\w+[-_][X-ZA-Cx-zA-C])\\b"
+                },
+                {
+                    "name": "krnsh.new-variables",
+                    "match": "⟨.*⟩"
                 },
                 {
                     "name": "krnsh.links",

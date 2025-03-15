@@ -36,6 +36,12 @@
                 }
             },
             {
+                "scope": "krnsh.new-variables",
+                "settings": {
+                    "foreground": "#7db7d7"
+                }
+            },
+            {
                 "scope": "krnsh.links",
                 "settings": {
                     "foreground": "#007bff"
@@ -65,10 +71,16 @@
     },
 4. Additionally, create notes.code-snippets folder in .vscode and add following JSON
 {
-    "single-line comment": {
+    "comment": {
         "prefix": "c",
         "body": [
             "⫽ $1",
+        ],
+    },
+    "variable": {
+        "prefix": "v",
+        "body": [
+            "⟨$1⟩",
         ],
     },
     "to-do item": {
