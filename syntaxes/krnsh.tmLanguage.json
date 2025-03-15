@@ -27,7 +27,8 @@
                 },
                 {
                     "name": "krnsh.new-variables",
-                    "match": "⟨.*⟩"
+                    "begin": "⟨",
+                    "end": "⟩"
                 },
                 {
                     "name": "krnsh.links",
