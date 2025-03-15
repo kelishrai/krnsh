@@ -23,10 +23,6 @@
                 },
                 {
                     "name": "krnsh.variables",
-                    "match": "\\b(\\w+[XYZABC]|\\w+[-_][XYZABCxyzAbC])\\b"
-                },
-                {
-                    "name": "krnsh.new-variables",
                     "match": "\\b[𝗔-𝗭𝗮-𝘇]\\w*\\b"
                 },
                 {
@@ -35,7 +31,7 @@
                 },
                 {
                     "name": "krnsh.file-name",
-                    "match": "(pgfn|nfn).*(\\.\\w+)\\b"
+                    "match": "(pgfn|nfn|fn).*(\\.\\w+)\\b"
                 },
                 {
                     "name": "krnsh.checklist-done",
@@ -49,19 +45,27 @@
                             "patterns": [
                                 {
                                     "name": "krnsh.abbreviations",
-                                    "match": "\\b(?:ab|ad|al|bd|cl|db|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg)\\b"
+                                    "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg|aka)\\s+"
                                 },
                                 {
                                     "name": "krnsh.symbols",
-                                    "match": "<|>|\\^|=|/|\\\\|\\+|-|\\*|!|@|%|,|\\.|:|'|\\\"|`"
+                                    "match": "<|>|\\^|=|/|\\\\|\\+|-|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$|\\|"
+                                },
+                                {
+                                    "name": "krnsh.digits",
+                                    "match": "\\d"
                                 },
                                 {
                                     "name": "krnsh.variables",
-                                    "match": "\\b(\\w+[XYZABC]|\\w+[-_][XYZABCxyzAbC])\\b"
+                                    "match": "\\b[𝗔-𝗭𝗮-𝘇]\\w*\\b"
                                 },
                                 {
-                                    "name": "krnsh.new-variables",
-                                    "match": "\\b[𝗔-𝗭𝗮-𝘇]\\w*\\b"
+                                    "name": "krnsh.links",
+                                    "match": "https?://\\S+"
+                                },
+                                {
+                                    "name": "krnsh.file-name",
+                                    "match": "(pgfn|nfn|fn).*(\\.\\w+)\\b"
                                 }
                             ]
                         }
