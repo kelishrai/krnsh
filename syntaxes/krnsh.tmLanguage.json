@@ -11,19 +11,23 @@
             "patterns": [
                 {
                     "name": "krnsh.abbreviations",
-                    "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg|aka)\\b"
+                    "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg|aka|ie)\\b"
                 },
                 {
                     "name": "krnsh.symbols",
-                    "match": "<|>|\\^|=|/|\\\\|\\+|-|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$|\\|"
+                    "match": "<|>|\\^|=|/|\\\\|\\+|-|—|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$|\\|"
                 },
                 {
                     "name": "krnsh.english",
-                    "match": "\\b(?:or|and|where)\\b"
+                    "match": "\\b(?:and|either|or|neither|nor|when|now|where|here|thus|hence|so|whereas|otherwise|since)\\b"
                 },
                 {
                     "name": "krnsh.variables",
-                    "match": "\\b[\\w-]*[𝗔-𝗭𝗮-𝘇][\\w-]*\\b"
+                    "match": "\\b[𝗔-𝗭𝗮-𝘇][\\w-]*\\b"
+                },
+                {
+                    "name": "krnsh.terms",
+                    "match": "\\b[𝙰-𝚉𝚊-𝚣][\\w-]*\\b"
                 },
                 {
                     "name": "krnsh.links",
@@ -57,7 +61,11 @@
                                 },
                                 {
                                     "name": "krnsh.variables",
-                                    "match": "\\b[\\w-]*[𝗔-𝗭𝗮-𝘇][\\w-]*\\b"
+                                    "match": "\\b[𝗔-𝗭𝗮-𝘇][\\w-]*\\b"
+                                },
+                                {
+                                    "name": "krnsh.terms",
+                                    "match": "\\b[𝙰-𝚉𝚊-𝚣][\\w-]*\\b"
                                 },
                                 {
                                     "name": "krnsh.links",
