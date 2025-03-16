@@ -27,7 +27,7 @@
                 },
                 {
                     "name": "krnsh.terms",
-                    "match": "\\b[𝙰-𝚉𝚊-𝚣][\\w-]*\\b"
+                    "match": "\\b[𝙰-𝚉𝚊-𝚣].*\\b"
                 },
                 {
                     "name": "krnsh.links",

@@ -37,7 +37,7 @@
             {
                 "scope": "krnsh.terms",
                 "settings": {
-                    "foreground": "#78c733"
+                    "foreground": "#c87b3c"
                 }
             },
             {
