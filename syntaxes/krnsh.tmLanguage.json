@@ -15,7 +15,7 @@
                 },
                 {
                     "name": "krnsh.symbols",
-                    "match": "<|>|\\^|=|/|\\\\|\\+|-|—|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$|\\|"
+                    "match": "<|>|\\^|=|/|\\\\|\\+|-|—|_|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$|\\|"
                 },
                 {
                     "name": "krnsh.english",
@@ -23,11 +23,11 @@
                 },
                 {
                     "name": "krnsh.variables",
-                    "match": "\\b[𝗔-𝗭𝗮-𝘇][\\w-]*\\b"
+                    "match": "[𝘈-𝘡𝘢-𝘻][\\w-]*\\b"
                 },
                 {
                     "name": "krnsh.terms",
-                    "match": "\\b[𝙰-𝚉𝚊-𝚣].*\\b"
+                    "match": "[𝗔-𝗭𝗮-𝘇][\\w-]*\\b"
                 },
                 {
                     "name": "krnsh.links",
@@ -49,23 +49,19 @@
                             "patterns": [
                                 {
                                     "name": "krnsh.abbreviations",
-                                    "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg|aka)\\s+"
+                                    "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg|aka|ie)\\b"
                                 },
                                 {
                                     "name": "krnsh.symbols",
-                                    "match": "<|>|\\^|=|/|\\\\|\\+|-|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$|\\|"
-                                },
-                                {
-                                    "name": "krnsh.english",
-                                    "match": "\\b(?:or|and|where)\\b"
+                                    "match": "<|>|\\^|=|/|\\\\|\\+|-|—|_|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$|\\|"
                                 },
                                 {
                                     "name": "krnsh.variables",
-                                    "match": "\\b[𝗔-𝗭𝗮-𝘇][\\w-]*\\b"
+                                    "match": "[𝘈-𝘡𝘢-𝘻][\\w-]*\\b"
                                 },
                                 {
                                     "name": "krnsh.terms",
-                                    "match": "\\b[𝙰-𝚉𝚊-𝚣][\\w-]*\\b"
+                                    "match": "[𝗔-𝗭𝗮-𝘇][\\w-]*\\b"
                                 },
                                 {
                                     "name": "krnsh.links",
