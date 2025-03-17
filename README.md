@@ -31,15 +31,13 @@
             {
                 "scope": "krnsh.variables",
                 "settings": {
-                    "foreground": "#66a1c1",
-                    "fontStyle": "italic"
+                    "foreground": "#66a1c1"
                 }
             },
             {
                 "scope": "krnsh.terms",
                 "settings": {
-                    "foreground": "#c586c0",
-                    "fontStyle": "bold"
+                    "foreground": "#c586c0"
                 }
             },
             {
