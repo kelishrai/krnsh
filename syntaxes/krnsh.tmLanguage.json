@@ -19,15 +19,15 @@
                 },
                 {
                     "name": "krnsh.english",
-                    "match": "\\b(?:and|either|or|neither|nor|when|now|where|here|thus|hence|so|whereas|otherwise|since)\\b"
+                    "match": "\\b(?:and|either|or|neither|nor|when|now|where|here|thus|hence|so|but|whereas|otherwise|since)\\b"
                 },
                 {
                     "name": "krnsh.variables",
-                    "match": "[𝘈-𝘡𝘢-𝘻][\\w-]*\\b"
+                    "match": "[𝘈-𝘡𝘢-𝘻][\\w\\-]*\\b"
                 },
                 {
                     "name": "krnsh.terms",
-                    "match": "[𝗔-𝗭𝗮-𝘇][\\w-]*\\b"
+                    "match": "[𝗔-𝗭𝗮-𝘇][\\w\\-]*\\b"
                 },
                 {
                     "name": "krnsh.links",
@@ -35,7 +35,7 @@
                 },
                 {
                     "name": "krnsh.file-name",
-                    "match": "(pgfn|nfn|fn).*(\\.\\w+)\\b"
+                    "match": "(pgfn|nfn|fn).*?(\\.\\w+)\\b"
                 },
                 {
                     "name": "krnsh.checklist-done",
@@ -57,11 +57,11 @@
                                 },
                                 {
                                     "name": "krnsh.variables",
-                                    "match": "[𝘈-𝘡𝘢-𝘻][\\w-]*\\b"
+                                    "match": "[𝘈-𝘡𝘢-𝘻][\\w\\-]*\\b"
                                 },
                                 {
                                     "name": "krnsh.terms",
-                                    "match": "[𝗔-𝗭𝗮-𝘇][\\w-]*\\b"
+                                    "match": "[𝗔-𝗭𝗮-𝘇][\\w\\-]*\\b"
                                 },
                                 {
                                     "name": "krnsh.links",
