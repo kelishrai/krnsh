@@ -125,6 +125,16 @@
     "𝘟": {"prefix": "$xx", "body": ["𝘟",],},
     "𝘠": {"prefix": "$yy", "body": ["𝘠",],},
     "𝘡": {"prefix": "$zz", "body": ["𝘡",],},
+    "𝟶": {"prefix": "$0", "body": ["𝟶",],},
+    "𝟷": {"prefix": "$1", "body": ["𝟷",],},
+    "𝟸": {"prefix": "$2", "body": ["𝟸",],},
+    "𝟹": {"prefix": "$3", "body": ["𝟹",],},
+    "𝟺": {"prefix": "$4", "body": ["𝟺",],},
+    "𝟻": {"prefix": "$5", "body": ["𝟻",],},
+    "𝟼": {"prefix": "$6", "body": ["𝟼",],},
+    "𝟽": {"prefix": "$7", "body": ["𝟽",],},
+    "𝟾": {"prefix": "$8", "body": ["𝟾",],},
+    "𝟿": {"prefix": "$9", "body": ["𝟿",],},
 
     "𝗮": {"prefix": "#a", "body": ["𝗮",],},
     "𝗯": {"prefix": "#b", "body": ["𝗯",],},
@@ -178,6 +188,16 @@
     "𝗫": {"prefix": "#xx", "body": ["𝗫",],},
     "𝗬": {"prefix": "#yy", "body": ["𝗬",],},
     "𝗭": {"prefix": "#zz", "body": ["𝗭",],},
+    "𝟬": {"prefix": "#0", "body": ["𝟬",],},
+    "𝟭": {"prefix": "#1", "body": ["𝟭",],},
+    "𝟮": {"prefix": "#2", "body": ["𝟮",],},
+    "𝟯": {"prefix": "#3", "body": ["𝟯",],},
+    "𝟰": {"prefix": "#4", "body": ["𝟰",],},
+    "𝟱": {"prefix": "#5", "body": ["𝟱",],},
+    "𝟲": {"prefix": "#6", "body": ["𝟲",],},
+    "𝟳": {"prefix": "#7", "body": ["𝟳",],},
+    "𝟴": {"prefix": "#8", "body": ["𝟴",],},
+    "𝟵": {"prefix": "#9", "body": ["𝟵",],},
 }
 
 ### Thanks for reading even though you might find no use of this extension XD
