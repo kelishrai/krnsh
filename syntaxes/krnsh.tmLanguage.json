@@ -23,11 +23,31 @@
                 },
                 {
                     "name": "krnsh.variables",
-                    "match": "‹(.*?)›"
+                    "match": "‹(.*?)›",
+                    "captures": {
+                        "0": {
+                            "patterns": [
+                                {
+                                    "name": "krnsh.invisible-characters",
+                                    "match": "[‹›]"
+                                }
+                            ]
+                        }
+                    }
                 },
                 {
                     "name": "krnsh.terms",
-                    "match": "〈(.*?)〉"
+                    "match": "〈(.*?)〉",
+                    "captures": {
+                        "0": {
+                            "patterns": [
+                                {
+                                    "name": "krnsh.invisible-characters",
+                                    "match": "[〈〉]"
+                                }
+                            ]
+                        }
+                    }
                 },
                 {
                     "name": "krnsh.links",
@@ -61,11 +81,31 @@
                                 },
                                 {
                                     "name": "krnsh.variables",
-                                    "match": "‹(.*?)›"
+                                    "match": "‹(.*?)›",
+                                    "captures": {
+                                        "0": {
+                                            "patterns": [
+                                                {
+                                                    "name": "krnsh.invisible-characters",
+                                                    "match": "[‹›]"
+                                                }
+                                            ]
+                                        }
+                                    }
                                 },
                                 {
                                     "name": "krnsh.terms",
-                                    "match": "〈(.*?)〉"
+                                    "match": "〈(.*?)〉",
+                                    "captures": {
+                                        "0": {
+                                            "patterns": [
+                                                {
+                                                    "name": "krnsh.invisible-characters",
+                                                    "match": "[〈〉]"
+                                                }
+                                            ]
+                                        }
+                                    }
                                 },
                                 {
                                     "name": "krnsh.links",

@@ -65,6 +65,12 @@
                 "settings": {
                     "foreground": "#6a9955"
                 }
+            },
+            {
+                "scope": "krnsh.invisible-characters",
+                "settings": {
+                    "foreground": "#ffffff00"
+                }
             }
         ]
     },
