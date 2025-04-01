@@ -11,7 +11,7 @@
             "patterns": [
                 {
                     "name": "krnsh.abbreviations",
-                    "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|pg|aka|ie)\\b"
+                    "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|cou|vou|er|rt|wg|sh|fg|pg|aka|ie)\\b"
                 },
                 {
                     "name": "krnsh.symbols",
@@ -23,11 +23,11 @@
                 },
                 {
                     "name": "krnsh.variables",
-                    "match": "[𝘈-𝘡𝘢-𝘻𝟶-𝟿][\\w\\-]*\\b"
+                    "match": "‹(.*?)›"
                 },
                 {
                     "name": "krnsh.terms",
-                    "match": "[𝗔-𝗭𝗮-𝘇𝟬-𝟵][\\w\\-]*\\b"
+                    "match": "〈(.*?)〉"
                 },
                 {
                     "name": "krnsh.links",
@@ -61,11 +61,11 @@
                                 },
                                 {
                                     "name": "krnsh.variables",
-                                    "match": "[𝘈-𝘡𝘢-𝘻𝟶-𝟿][\\w\\-]*\\b"
+                                    "match": "‹(.*?)›"
                                 },
                                 {
                                     "name": "krnsh.terms",
-                                    "match": "[𝗔-𝗭𝗮-𝘇𝟬-𝟵][\\w\\-]*\\b"
+                                    "match": "〈(.*?)〉"
                                 },
                                 {
                                     "name": "krnsh.links",
