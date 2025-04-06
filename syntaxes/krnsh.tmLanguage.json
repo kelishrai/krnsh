@@ -15,20 +15,20 @@
                 },
                 {
                     "name": "krnsh.symbols",
-                    "match": "<|>|\\^|=|/|\\\\|\\+|-|—|_|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$|\\|"
+                    "match": "<|>|\\^|=|/|\\\\|\\+|-|—|_|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$|\\||•|#|σ|μ|∈|∪|∩|∅|∑|≠|π|∞|ε|←|↑|→|↓|↗|↖|↙|↘|⤡|⤢|⤣|⤤|⤥|⤦|↺|↻|⟲|⟳|⤧|⤨|⤩|⤪|⤫|⨉|⤬|⤭|⤮|⤯|⤰|⤱|⤲|⤴|⤵|⤶|⤷|⤸|⤹|⤺|⤻|⤾|⤿|α|λ|γ"
                 },
                 {
                     "name": "krnsh.english",
-                    "match": "\\b(?:and|either|or|neither|nor|when|now|where|here|thus|hence|so|but|while|whereas|otherwise|since)\\b"
+                    "match": "\\b(?:with|and|either|or|neither|nor|when|now|where|here|because|thus|hence|so|then|however|but|although|while|whereas|otherwise|since)\\b"
                 },
                 {
                     "name": "krnsh.variables",
-                    "match": "‹(.*?)›",
+                    "match": "[‹](.*?)[›]",
                     "captures": {
                         "0": {
                             "patterns": [
                                 {
-                                    "name": "krnsh.invisible-characters",
+                                    "name": "krnsh.variables-invisible-characters",
                                     "match": "[‹›]"
                                 }
                             ]
@@ -42,7 +42,7 @@
                         "0": {
                             "patterns": [
                                 {
-                                    "name": "krnsh.invisible-characters",
+                                    "name": "krnsh.terms-invisible-characters",
                                     "match": "[〈〉]"
                                 }
                             ]
@@ -73,11 +73,11 @@
                                 },
                                 {
                                     "name": "krnsh.symbols",
-                                    "match": "<|>|\\^|=|/|\\\\|\\+|-|—|_|\\*|!|@|#|%|,|\\.|:|'|\\\"|`|\\$|\\|"
+                                    "match": "<|>|\\^|=|/|\\\\|\\+|-|—|_|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$|\\||•|#|σ|μ|∈|∪|∩|∅|∑|≠|π|∞|ε|←|↑|→|↓|↗|↖|↙|↘|⤡|⤢|⤣|⤤|⤥|⤦|↺|↻|⟲|⟳|⤧|⤨|⤩|⤪|⤫|⨉|⤬|⤭|⤮|⤯|⤰|⤱|⤲|⤴|⤵|⤶|⤷|⤸|⤹|⤺|⤻|⤾|⤿|α|λ|γ"
                                 },
                                 {
                                     "name": "krnsh.english",
-                                    "match": "\\b(?:and|either|or|neither|nor|when|now|where|here|thus|hence|so|but|while|whereas|otherwise|since)\\b"
+                                    "match": "\\b(?:with|and|either|or|neither|nor|when|now|where|here|because|thus|hence|so|then|however|but|although|while|whereas|otherwise|since)\\b"
                                 },
                                 {
                                     "name": "krnsh.variables",
@@ -86,7 +86,7 @@
                                         "0": {
                                             "patterns": [
                                                 {
-                                                    "name": "krnsh.invisible-characters",
+                                                    "name": "krnsh.variables-invisible-characters",
                                                     "match": "[‹›]"
                                                 }
                                             ]
@@ -100,7 +100,7 @@
                                         "0": {
                                             "patterns": [
                                                 {
-                                                    "name": "krnsh.invisible-characters",
+                                                    "name": "krnsh.terms-invisible-characters",
                                                     "match": "[〈〉]"
                                                 }
                                             ]

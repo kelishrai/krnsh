@@ -3,7 +3,7 @@
 ### I doubt anyone will find this extension useful besides me. Still, here's the install process:
 
 1. Download KRNSH and rename it to "krnsh"
-2. Add krnsh in "C:\Users\userX\.vscode\extensions"
+2. Add krnsh in "C:\Users\‹user›\.vscode\extensions"
 3. Finally, in VS Code, open settings.json and add following JSON
     "files.associations": {
         "*.txt": "krnsh"
@@ -35,7 +35,19 @@
                 }
             },
             {
+                "scope": "krnsh.variables-invisible-characters",
+                "settings": {
+                    "foreground": "#66a1c1"
+                }
+            },
+            {
                 "scope": "krnsh.terms",
+                "settings": {
+                    "foreground": "#c586c0"
+                }
+            },
+            {
+                "scope": "krnsh.terms-invisible-characters",
                 "settings": {
                     "foreground": "#c586c0"
                 }
@@ -64,12 +76,6 @@
                 "scope": "krnsh.single-line-comments",
                 "settings": {
                     "foreground": "#6a9955"
-                }
-            },
-            {
-                "scope": "krnsh.invisible-characters",
-                "settings": {
-                    "foreground": "#ffffff00"
                 }
             }
         ]
