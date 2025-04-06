@@ -13,69 +13,69 @@
             {
                 "scope": "krnsh.abbreviations",
                 "settings": {
-                    "foreground": "#4ec9b0"
+                    "foreground": "#4ec9b0",
                 }
             },
             {
                 "scope": "krnsh.symbols",
                 "settings": {
-                    "foreground": "#c87b3c"
+                    "foreground": "#c87b3c",
                 }
             },
             {
                 "scope": "krnsh.english",
                 "settings": {
-                    "foreground": "#9686c5"
+                    "foreground": "#9686c5",
                 }
             },
             {
                 "scope": "krnsh.variables",
                 "settings": {
-                    "foreground": "#66a1c1"
+                    "foreground": "#66a1c1",
                 }
             },
             {
                 "scope": "krnsh.variables-invisible-characters",
                 "settings": {
-                    "foreground": "#66a1c1"
+                    "foreground": "#66a1c140",
                 }
             },
             {
                 "scope": "krnsh.terms",
                 "settings": {
-                    "foreground": "#c586c0"
+                    "foreground": "#c586c0",
                 }
             },
             {
                 "scope": "krnsh.terms-invisible-characters",
                 "settings": {
-                    "foreground": "#c586c0"
+                    "foreground": "#c586c040",
                 }
             },
             {
                 "scope": "krnsh.links",
                 "settings": {
-                    "foreground": "#007bff"
+                    "foreground": "#007bff",
                 }
             },
             {
                 "scope": "krnsh.file-name",
                 "settings": {
                     "foreground": "#b5cea8",
-                    "fontStyle": "underline"
+                    "fontStyle": "underline",
                 }
             },
             {
                 "scope": "krnsh.checklist-done",
                 "settings": {
                     "foreground": "#3da753",
-                    "fontStyle": "strikethrough"
+                    "fontStyle": "strikethrough",
                 }
             },
             {
                 "scope": "krnsh.single-line-comments",
                 "settings": {
-                    "foreground": "#6a9955"
+                    "foreground": "#6a9955",
                 }
             }
         ]
