@@ -37,7 +37,7 @@
             {
                 "scope": "krnsh.variables-invisible-characters",
                 "settings": {
-                    "foreground": "#66a1c140",
+                    "foreground": "#66a1c100",
                 }
             },
             {
@@ -49,7 +49,7 @@
             {
                 "scope": "krnsh.terms-invisible-characters",
                 "settings": {
-                    "foreground": "#c586c040",
+                    "foreground": "#c586c000",
                 }
             },
             {
@@ -83,8 +83,8 @@
 4. Additionally, create notes.code-snippets folder in .vscode and add following JSON
 {
     "comment": {"prefix": "c", "body": ["⫽ ",],},
-    "heading": {"prefix": "h", "body": ["〈$1〉",],},
-    "variables": {"prefix": "v", "body": ["‹$1›",],},
+    "heading": {"prefix": "h", "body": ["⟮$1⟯",],},
+    "variables": {"prefix": "v", "body": ["〈$1〉",],},
     "to-do item": {"prefix": "td", "body": ["☑",],},
 }
 
