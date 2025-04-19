@@ -1,0 +1,132 @@
+250419
+fn syntaxes/krnsh.tmLanguage.json sn
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "KRNSH",
+    "patterns": [
+        {
+            "include": "#body"
+        }
+    ],
+    "repository": {
+        "body": {
+            "patterns": [
+                {
+                    "name": "krnsh.abbreviations",
+                    "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|cou|vou|er|rt|wg|sh|fg|aka|ie|ng)\\b"
+                },
+                {
+                    "name": "krnsh.symbols",
+                    "match": "<|>|\\^|=|/|\\\\|\\+|-|—|_|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$|\\||•|#|σ|μ|∈|∪|∩|∅|∑|≠|π|∞|ε|←|↑|→|↓|↗|↖|↙|↘|↔|↕|⤡|⤢|⤣|⤤|⤥|⤦|↺|↻|⟲|⟳|⤧|⤨|⤩|⤪|⤫|⨉|⤬|⤭|⤮|⤯|⤰|⤱|⤲|⤴|⤵|⤶|⤷|⤸|⤹|⤺|⤻|⤾|⤿|α|λ|γ"
+                },
+                {
+                    "name": "krnsh.english",
+                    "match": "\\b(?:with|and|either|or|neither|nor|when|now|where|here|because|thus|hence|so|then|likewise|similarly|however|but|although|while|whereas|otherwise|since)\\b"
+                },
+                {
+                    "name": "krnsh.variables",
+                    "match": "[〈](.*?)[〉]",
+                    "captures": {
+                        "0": {
+                            "patterns": [
+                                {
+                                    "name": "krnsh.variables-invisible-characters",
+                                    "match": "[〈〉]"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "krnsh.terms",
+                    "match": "⟮(.*?)⟯",
+                    "captures": {
+                        "0": {
+                            "patterns": [
+                                {
+                                    "name": "krnsh.terms-invisible-characters",
+                                    "match": "[⟮⟯]"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "krnsh.links",
+                    "match": "https?://\\S+"
+                },
+                {
+                    "name": "krnsh.file-name",
+                    "match": "(fn|nfn|pgfn|mfn).*?(\\.\\w+)\\b"
+                },
+                {
+                    "name": "krnsh.checklist-done",
+                    "match": "☑\\s.*"
+                },
+                {
+                    "name": "krnsh.horizontal-rule",
+                    "match": "―{100}"
+                },
+                {
+                    "name": "krnsh.single-line-comments",
+                    "match": "⫽\\s.*",
+                    "captures": {
+                        "0": {
+                            "patterns": [
+                                {
+                                    "name": "krnsh.abbreviations",
+                                    "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|cou|vou|er|rt|wg|sh|fg|aka|ie|ng)\\b"
+                                },
+                                {
+                                    "name": "krnsh.symbols",
+                                    "match": "<|>|\\^|=|/|\\\\|\\+|-|—|_|\\*|!|@|%|,|\\.|:|'|\\\"|`|\\$|\\||•|#|σ|μ|∈|∪|∩|∅|∑|≠|π|∞|ε|←|↑|→|↓|↗|↖|↙|↘|↔|↕|⤡|⤢|⤣|⤤|⤥|⤦|↺|↻|⟲|⟳|⤧|⤨|⤩|⤪|⤫|⨉|⤬|⤭|⤮|⤯|⤰|⤱|⤲|⤴|⤵|⤶|⤷|⤸|⤹|⤺|⤻|⤾|⤿|α|λ|γ"
+                                },
+                                {
+                                    "name": "krnsh.english",
+                                    "match": "\\b(?:with|and|either|or|neither|nor|when|now|where|here|because|thus|hence|so|then|likewise|similarly|however|but|although|while|whereas|otherwise|since)\\b"
+                                },
+                                {
+                                    "name": "krnsh.variables",
+                                    "match": "〈(.*?)〉",
+                                    "captures": {
+                                        "0": {
+                                            "patterns": [
+                                                {
+                                                    "name": "krnsh.variables-invisible-characters",
+                                                    "match": "[〈〉]"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "krnsh.terms",
+                                    "match": "⟮(.*?)⟯",
+                                    "captures": {
+                                        "0": {
+                                            "patterns": [
+                                                {
+                                                    "name": "krnsh.terms-invisible-characters",
+                                                    "match": "[⟮⟯]"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "krnsh.links",
+                                    "match": "https?://\\S+"
+                                },
+                                {
+                                    "name": "krnsh.file-name",
+                                    "match": "(fn|nfn|pgfn|mfn).*?(\\.\\w+)\\b"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "scopeName": "source.krnsh"
+}

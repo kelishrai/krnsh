@@ -35,7 +35,7 @@
                 }
             },
             {
-                "scope": "krnsh.variables-invisible-characters",
+                "scope": "krnsh.variables.invisible",
                 "settings": {
                     "foreground": "#66a1c100",
                 }
@@ -47,7 +47,7 @@
                 }
             },
             {
-                "scope": "krnsh.terms-invisible-characters",
+                "scope": "krnsh.terms.invisible",
                 "settings": {
                     "foreground": "#c586c000",
                 }
@@ -77,15 +77,22 @@
                 "settings": {
                     "foreground": "#6a9955",
                 }
-            }
+            },
+            {
+                "scope": "krnsh.horizontal-rule",
+                "settings": {
+                    "foreground": "#414041",
+                }
+            },
         ]
     },
 4. Additionally, create notes.code-snippets folder in .vscode and add following JSON
 {
-    "comment": {"prefix": "c", "body": ["⫽ ",],},
-    "heading": {"prefix": "h", "body": ["⟮$1⟯",],},
-    "variables": {"prefix": "v", "body": ["〈$1〉",],},
-    "to-do item": {"prefix": "td", "body": ["☑",],},
+    "comment": {"prefix": "c", "body": ["⫽ $0",],},
+    "heading": {"prefix": "h", "body": ["⟮$1⟯$0",],},
+    "variables": {"prefix": "v", "body": ["〈$1〉$0",],},
+    "to-do item": {"prefix": "td", "body": ["☑$0",],},
+    "horizontal rule": {"prefix": "hr", "body": ["――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――","$0"],},
 }
 
 ### Thanks for reading even though you might find no use of this extension XD
