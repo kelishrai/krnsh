@@ -104,7 +104,7 @@
     "→": {"prefix": "arrow", "body": ["→ $0",],},
     "╎": {"prefix": "comment", "body": ["╎ $0",],},
     "│ ": {"prefix": "heading", "body": ["│ $0",],},
-    "‹›": {"prefix": "highlight", "body": ["‹$1›$0",],},
+    "⟮⟯": {"prefix": "highlight", "body": ["⟮$1⟯$0",],},
     "⸻": {"prefix": "horizontal rule", "body": ["⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻","$0"],},
     "❘": {"prefix": "section heading", "body": ["❘ $0",],},
     "☑": {"prefix": "to-do", "body": ["☑$0",],},

@@ -25,7 +25,7 @@
             "match": "│\\s.*",
             "captures": {
                 "0": {
-                    "patterns": [{ "include": "#abbreviation" }, { "include": "#highlight" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#variable" }]
+                    "patterns": [{ "include": "#abbreviation" }, { "include": "#comment" }, { "include": "#highlight" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#variable" }]
                 }
             }
         },
@@ -34,7 +34,7 @@
             "match": "❘\\s.*",
             "captures": {
                 "0": {
-                    "patterns": [{ "include": "#abbreviation" }, { "include": "#highlight" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#variable" }]
+                    "patterns": [{ "include": "#abbreviation" }, { "include": "#comment" }, { "include": "#highlight" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#variable" }]
                 }
             }
         }
@@ -48,17 +48,25 @@
                 }
             ]
         },
+        "comment": {
+            "patterns": [
+                {
+                    "name": "krnsh.comment.inline",
+                    "match": "╎\\s.*"
+                }
+            ]
+        },
         "highlight": {
             "patterns": [
                 {
                     "name": "krnsh.highlight",
-                    "match": "‹(.*?)›",
+                    "match": "⟮(.*?)⟯",
                     "captures": {
                         "0": {
                             "patterns": [
                                 {
                                     "name": "krnsh.highlight.invisible",
-                                    "match": "[‹›]"
+                                    "match": "[⟮⟯]"
                                 }
                             ]
                         }
