@@ -2,93 +2,41 @@
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
     "name": "KRNSH",
     "patterns": [
-        {"include": "#abbreviations"},
-        {"include": "#symbols"},
-        {"include": "#english"},
-        {"include": "#variables"},
-        {"include": "#terms"},
-        {"include": "#bold"},
-        {"include": "#links"},
-        {"include": "#file-name"},
-        {"include": "#checklist-done"},
-        {"include": "#horizontal-rule"},
+        { "include": "#abbreviation" },
+        { "include": "#bold" },
+        { "include": "#english" },
+        { "include": "#file-name" },
+        { "include": "#horizontal-rule" },
+        { "include": "#link" },
+        { "include": "#symbol" },
+        { "include": "#term" },
+        { "include": "#to-do" },
+        { "include": "#variable" },
         {
-            "name": "krnsh.single-line-comments",
+            "name": "krnsh.comment",
+            "match": "╎\\s.*",
+            "captures": {
+                "0": {
+                    "patterns": [{ "include": "#abbreviation" }, { "include": "#bold" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#term" }, { "include": "#variable" }]
+                }
+            }
+        },
+        {
+            "name": "krnsh.section-divider",
             "match": "⫽\\s.*",
             "captures": {
                 "0": {
-                    "patterns": [
-                        { "include": "#abbreviations" },
-                        { "include": "#symbols" },
-                        { "include": "#english" },
-                        { "include": "#variables" },
-                        { "include": "#terms" },
-                        {"include": "#bold"},
-                        { "include": "#links" },
-                        { "include": "#file-name" }
-                    ]
+                    "patterns": [{ "include": "#abbreviation" }, { "include": "#bold" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#term" }, { "include": "#variable" }]
                 }
             }
         }
     ],
     "repository": {
-        "abbreviations": {
+        "abbreviation": {
             "patterns": [
                 {
-                    "name": "krnsh.abbreviations",
+                    "name": "krnsh.abbreviation",
                     "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|cou|vou|er|rt|wg|sh|fg|aka|ie|ng)\\b"
-                }
-            ]
-        },
-        "symbols": {
-            "patterns": [
-                {
-                    "name": "krnsh.symbols",
-                    "match": "<|>|\\^|=|/|\\\\|\\+|-|—|_|\\*|!|@|%|,|\\.|\\?|:|'|\\\"|`|\\$|\\||•|#|σ|μ|∈|∪|∩|∅|∑|≠|π|∞|ε|←|↑|→|↓|↗|↖|↙|↘|↔|↕|⤡|⤢|⤣|⤤|⤥|⤦|↺|↻|⟲|⟳|⤧|⤨|⤩|⤪|⤫|⨉|⤬|⤭|⤮|⤯|⤰|⤱|⤲|⤴|⤵|⤶|⤷|⤸|⤹|⤺|⤻|⤾|⤿|α|λ|γ"
-                }
-            ]
-        },
-        "english": {
-            "patterns": [
-                {
-                    "name": "krnsh.english",
-                    "match": "\\b(?:with|and|either|or|neither|nor|when|now|where|here|because|thus|hence|so|then|likewise|similarly|however|but|although|while|whereas|otherwise|since)\\b"
-                }
-            ]
-        },
-        "variables": {
-            "patterns": [
-                {
-                    "name": "krnsh.variables",
-                    "match": "〈(.*?)〉",
-                    "captures": {
-                        "0": {
-                            "patterns": [
-                                {
-                                    "name": "krnsh.variables.invisible",
-                                    "match": "[〈〉]"
-                                }
-                            ]
-                        }
-                    }
-                }
-            ]
-        },
-        "terms": {
-            "patterns": [
-                {
-                    "name": "krnsh.terms",
-                    "match": "⟮(.*?)⟯",
-                    "captures": {
-                        "0": {
-                            "patterns": [
-                                {
-                                    "name": "krnsh.terms.invisible",
-                                    "match": "[⟮⟯]"
-                                }
-                            ]
-                        }
-                    }
                 }
             ]
         },
@@ -110,11 +58,11 @@
                 }
             ]
         },
-        "links": {
+        "english": {
             "patterns": [
                 {
-                    "name": "krnsh.links",
-                    "match": "https?://\\S+"
+                    "name": "krnsh.english",
+                    "match": "\\b(?:with|and|either|or|neither|nor|when|now|where|here|because|thus|hence|so|then|likewise|similarly|however|but|although|while|whereas|otherwise|since)\\b"
                 }
             ]
         },
@@ -126,19 +74,71 @@
                 }
             ]
         },
-        "checklist-done": {
-            "patterns": [
-                {
-                    "name": "krnsh.checklist-done",
-                    "match": "☑\\s.*"
-                }
-            ]
-        },
         "horizontal-rule": {
             "patterns": [
                 {
                     "name": "krnsh.horizontal-rule",
-                    "match": "―{100}"
+                    "match": "⸻"
+                }
+            ]
+        },
+        "link": {
+            "patterns": [
+                {
+                    "name": "krnsh.link",
+                    "match": "https?://\\S+"
+                }
+            ]
+        },
+        "symbol": {
+            "patterns": [
+                {
+                    "name": "krnsh.symbol",
+                    "match": "<|>|\\^|=|/|\\\\|\\+|-|—|_|\\*|!|@|%|,|\\.|\\?|:|'|\\\"|`|\\$|\\||•|#|σ|μ|∈|∪|∩|∅|∑|≠|π|∞|ε|←|↑|→|↓|↗|↖|↙|↘|↔|↕|⤡|⤢|⤣|⤤|⤥|⤦|↺|↻|⟲|⟳|⤧|⤨|⤩|⤪|⤫|⨉|⤬|⤭|⤮|⤯|⤰|⤱|⤲|⤴|⤵|⤶|⤷|⤸|⤹|⤺|⤻|⤾|⤿|α|λ|γ"
+                }
+            ]
+        },
+        "term": {
+            "patterns": [
+                {
+                    "name": "krnsh.term",
+                    "match": "⟮(.*?)⟯",
+                    "captures": {
+                        "0": {
+                            "patterns": [
+                                {
+                                    "name": "krnsh.term.invisible",
+                                    "match": "[⟮⟯]"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "to-do": {
+            "patterns": [
+                {
+                    "name": "krnsh.to-do",
+                    "match": "☑\\s.*"
+                }
+            ]
+        },
+        "variable": {
+            "patterns": [
+                {
+                    "name": "krnsh.variable",
+                    "match": "〈(.*?)〉",
+                    "captures": {
+                        "0": {
+                            "patterns": [
+                                {
+                                    "name": "krnsh.variable.invisible",
+                                    "match": "[〈〉]"
+                                }
+                            ]
+                        }
+                    }
                 }
             ]
         }
