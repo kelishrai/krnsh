@@ -17,13 +17,13 @@
                 }
             },
             {
-                "scope": "krnsh.bold",
+                "scope": "krnsh.highlight",
                 "settings": {
                     "fontStyle": "bold"
                 }
             },
             {
-                "scope": "krnsh.bold.invisible",
+                "scope": "krnsh.highlight.invisible",
                 "settings": {
                     "foreground": "#ffffff00",
                 }
@@ -43,8 +43,14 @@
             {
                 "scope": "krnsh.file-name",
                 "settings": {
-                    "foreground": "#007bff",
+                    "foreground": "#fed14a",
                     "fontStyle": "underline",
+                }
+            },
+            {
+                "scope": "krnsh.heading",
+                "settings": {
+                    "foreground": "#c586c0",
                 }
             },
             {
@@ -61,12 +67,6 @@
                 }
             },
             {
-                "scope": "krnsh.list",
-                "settings": {
-                    "foreground": "#ff6e6e"
-                }
-            },
-            {
                 "scope": "krnsh.section-divider",
                 "settings": {
                     "foreground": "#75cc9e",
@@ -76,18 +76,6 @@
                 "scope": "krnsh.symbol",
                 "settings": {
                     "foreground": "#c87b3c",
-                }
-            },
-            {
-                "scope": "krnsh.term",
-                "settings": {
-                    "foreground": "#c586c0",
-                }
-            },
-            {
-                "scope": "krnsh.term.invisible",
-                "settings": {
-                    "foreground": "#c586c000",
                 }
             },
             {
@@ -113,13 +101,14 @@
     },
 4. Additionally, create notes.code-snippets folder in .vscode and add following JSON
 {
+    "→": {"prefix": "arrow", "body": ["→ $0",],},
     "╎": {"prefix": "comment", "body": ["╎ $0",],},
-    "〈": {"prefix": "variable", "body": ["〈$1〉$0",],},
-    "⟮": {"prefix": "term", "body": ["⟮$1⟯$0",],},
-    "⫽": {"prefix": "section divider", "body": ["⫽ $0",],},
+    "│ ": {"prefix": "heading", "body": ["│ $0",],},
+    "‹›": {"prefix": "highlight", "body": ["‹$1›$0",],},
     "⸻": {"prefix": "horizontal rule", "body": ["⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻","$0"],},
+    "❘": {"prefix": "section heading", "body": ["❘ $0",],},
     "☑": {"prefix": "to-do", "body": ["☑$0",],},
-    "→": {"prefix": "arrow", "body": ["→",],},
+    "〈": {"prefix": "variable", "body": ["〈$1〉$0",],},
 }
 
 ### Thanks for reading even though you might find no use of this extension XD

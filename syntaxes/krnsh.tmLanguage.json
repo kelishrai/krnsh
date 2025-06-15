@@ -3,13 +3,12 @@
     "name": "KRNSH",
     "patterns": [
         { "include": "#abbreviation" },
-        { "include": "#bold" },
+        { "include": "#highlight" },
         { "include": "#english" },
         { "include": "#file-name" },
         { "include": "#horizontal-rule" },
         { "include": "#link" },
         { "include": "#symbol" },
-        { "include": "#term" },
         { "include": "#to-do" },
         { "include": "#variable" },
         {
@@ -17,16 +16,25 @@
             "match": "╎\\s.*",
             "captures": {
                 "0": {
-                    "patterns": [{ "include": "#abbreviation" }, { "include": "#bold" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#term" }, { "include": "#variable" }]
+                    "patterns": [{ "include": "#abbreviation" }, { "include": "#highlight" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#heading" }, { "include": "#variable" }]
                 }
             }
         },
         {
-            "name": "krnsh.section-divider",
-            "match": "⫽\\s.*",
+            "name": "krnsh.heading",
+            "match": "│\\s.*",
             "captures": {
                 "0": {
-                    "patterns": [{ "include": "#abbreviation" }, { "include": "#bold" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#term" }, { "include": "#variable" }]
+                    "patterns": [{ "include": "#abbreviation" }, { "include": "#highlight" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#variable" }]
+                }
+            }
+        },
+        {
+            "name": "krnsh.section-heading",
+            "match": "❘\\s.*",
+            "captures": {
+                "0": {
+                    "patterns": [{ "include": "#abbreviation" }, { "include": "#highlight" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#variable" }]
                 }
             }
         }
@@ -40,16 +48,16 @@
                 }
             ]
         },
-        "bold": {
+        "highlight": {
             "patterns": [
                 {
-                    "name": "krnsh.bold",
+                    "name": "krnsh.highlight",
                     "match": "‹(.*?)›",
                     "captures": {
                         "0": {
                             "patterns": [
                                 {
-                                    "name": "krnsh.bold.invisible",
+                                    "name": "krnsh.highlight.invisible",
                                     "match": "[‹›]"
                                 }
                             ]
@@ -95,24 +103,6 @@
                 {
                     "name": "krnsh.symbol",
                     "match": "<|>|\\^|=|/|\\\\|\\+|-|—|_|\\*|!|@|%|,|\\.|\\?|:|'|\\\"|`|\\$|\\||•|#|σ|μ|∈|∪|∩|∅|∑|≠|π|∞|ε|←|↑|→|↓|↗|↖|↙|↘|↔|↕|⤡|⤢|⤣|⤤|⤥|⤦|↺|↻|⟲|⟳|⤧|⤨|⤩|⤪|⤫|⨉|⤬|⤭|⤮|⤯|⤰|⤱|⤲|⤴|⤵|⤶|⤷|⤸|⤹|⤺|⤻|⤾|⤿|α|λ|γ"
-                }
-            ]
-        },
-        "term": {
-            "patterns": [
-                {
-                    "name": "krnsh.term",
-                    "match": "⟮(.*?)⟯",
-                    "captures": {
-                        "0": {
-                            "patterns": [
-                                {
-                                    "name": "krnsh.term.invisible",
-                                    "match": "[⟮⟯]"
-                                }
-                            ]
-                        }
-                    }
                 }
             ]
         },
