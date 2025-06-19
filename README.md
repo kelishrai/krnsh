@@ -29,21 +29,21 @@
                 }
             },
             {
-                "scope": "krnsh.comment",
-                "settings": {
-                    "foreground": "#6a9955",
-                }
-            },
-            {
                 "scope": "krnsh.english",
                 "settings": {
                     "foreground": "#9686c5",
                 }
             },
             {
+                "scope": "krnsh.explanation",
+                "settings": {
+                    "foreground": "#6a9955",
+                }
+            },
+            {
                 "scope": "krnsh.file-name",
                 "settings": {
-                    "foreground": "#fed14a",
+                    "foreground": "#dfbe5b",
                     "fontStyle": "underline",
                 }
             },
@@ -67,9 +67,15 @@
                 }
             },
             {
-                "scope": "krnsh.section-divider",
+                "scope": "krnsh.representation",
                 "settings": {
-                    "foreground": "#75cc9e",
+                    "foreground": "#4ec9b0",
+                }
+            },
+            {
+                "scope": "krnsh.section-heading",
+                "settings": {
+                    "foreground": "#cf7094",
                 }
             },
             {
@@ -101,14 +107,35 @@
     },
 4. Additionally, create notes.code-snippets folder in .vscode and add following JSON
 {
+    "╎": {"prefix": "c", "body": ["╎ $0",],},
     "→": {"prefix": "arrow", "body": ["→ $0",],},
-    "╎": {"prefix": "comment", "body": ["╎ $0",],},
-    "│ ": {"prefix": "heading", "body": ["│ $0",],},
-    "⟮⟯": {"prefix": "highlight", "body": ["⟮$1⟯$0",],},
-    "⸻": {"prefix": "horizontal rule", "body": ["⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻","$0"],},
-    "❘": {"prefix": "section heading", "body": ["❘ $0",],},
-    "☑": {"prefix": "to-do", "body": ["☑$0",],},
-    "〈": {"prefix": "variable", "body": ["〈$1〉$0",],},
+    "│": {"prefix": "h", "body": ["│ $0",],},
+    "⟮⟯": {"prefix": "b", "body": ["⟮$1⟯$0",],},
+    "⸻": {"prefix": "hr", "body": ["⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻","$0"],},
+    "❘": {"prefix": "s", "body": ["❘ $0",],},
+    "〈〉": {"prefix": "v", "body": ["〈$1〉$0",]},
+    "☞": {"prefix": "nt", "body": ["☞$0",]},
+    "✦": {"prefix": "ti", "body": ["✦$0",]},
+    "✓": {"prefix": "rt", "body": ["✓$0",]},
+    "✗": {"prefix": "wg", "body": ["✗$0",]},
+    "⚙": {"prefix": "se", "body": ["⚙$0",]},
+    "⥣": {"prefix": "ad", "body": ["⥣$0",]},
+    "⥥": {"prefix": "di", "body": ["⥥$0",]},
+    "⧉": {"prefix": "me", "body": ["⧉$0",]},
+    "ƒ": {"prefix": "fo", "body": ["ƒ$0",]},
+    "⇄": {"prefix": "pr", "body": ["⇄$0",]},
+    "⚛": {"prefix": "st", "body": ["⚛$0",]},
+    "⋙": {"prefix": "cl", "body": ["⋙$0",]},
+    "▷": {"prefix": "eg", "body": ["▷$0",]},
+    "☰": {"prefix": "li", "body": ["☰$0",]},
+    "⚒": {"prefix": "ps", "body": ["⚒$0",]},
+    "☑": {"prefix": "td", "body": ["☑$0",]},
+    "≶": {"prefix": "vs", "body": ["≶$0",]},
+    "𝕋": {"prefix": "ty", "body": ["𝕋$0",]},
+    "🗔": {"prefix": "ou", "body": ["🗔$0",]},
+    "⚠": {"prefix": "er", "body": ["⚠$0",]},
+    "⌘": {"prefix": "sh", "body": ["⌘$0",]},
+    "⛶": {"prefix": "fg", "body": ["⛶$0",]},
 }
 
 ### Thanks for reading even though you might find no use of this extension XD

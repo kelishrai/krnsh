@@ -8,11 +8,12 @@
         { "include": "#file-name" },
         { "include": "#horizontal-rule" },
         { "include": "#link" },
+        { "include": "#representation" },
         { "include": "#symbol" },
         { "include": "#to-do" },
         { "include": "#variable" },
         {
-            "name": "krnsh.comment",
+            "name": "krnsh.explanation",
             "match": "╎\\s.*",
             "captures": {
                 "0": {
@@ -25,7 +26,7 @@
             "match": "│\\s.*",
             "captures": {
                 "0": {
-                    "patterns": [{ "include": "#abbreviation" }, { "include": "#comment" }, { "include": "#highlight" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#variable" }]
+                    "patterns": [{ "include": "#abbreviation" }, { "include": "#explanation" }, { "include": "#highlight" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#variable" }]
                 }
             }
         },
@@ -34,7 +35,7 @@
             "match": "❘\\s.*",
             "captures": {
                 "0": {
-                    "patterns": [{ "include": "#abbreviation" }, { "include": "#comment" }, { "include": "#highlight" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#variable" }]
+                    "patterns": [{ "include": "#abbreviation" }, { "include": "#explanation" }, { "include": "#highlight" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#variable" }]
                 }
             }
         }
@@ -44,14 +45,14 @@
             "patterns": [
                 {
                     "name": "krnsh.abbreviation",
-                    "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|cou|vou|er|rt|wg|sh|fg|aka|ie|ng)\\b"
+                    "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|aka|ie|ng)\\b"
                 }
             ]
         },
-        "comment": {
+        "explanation": {
             "patterns": [
                 {
-                    "name": "krnsh.comment.inline",
+                    "name": "krnsh.explanation.inline",
                     "match": "╎\\s.*"
                 }
             ]
@@ -103,6 +104,14 @@
                 {
                     "name": "krnsh.link",
                     "match": "https?://\\S+"
+                }
+            ]
+        },
+        "representation": {
+            "patterns": [
+                {
+                    "name": "krnsh.representation",
+                    "match": "(☞|✦|✓|✗|⚙|⥣|⥥|⧉|ƒ|⇄|⚛|⋙|▷|☰|⚒|≶|𝕋|🗔|⚠|⌘|⛶)"
                 }
             ]
         },
