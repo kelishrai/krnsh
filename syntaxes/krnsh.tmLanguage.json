@@ -14,7 +14,7 @@
         { "include": "#variable" },
         {
             "name": "krnsh.explanation",
-            "match": "╎\\s.*",
+            "match": "╱\\s.*",
             "captures": {
                 "0": {
                     "patterns": [{ "include": "#abbreviation" }, { "include": "#highlight" }, { "include": "#english" }, { "include": "#file-name" }, { "include": "#link" }, { "include": "#symbol" }, { "include": "#heading" }, { "include": "#variable" }]
@@ -45,7 +45,7 @@
             "patterns": [
                 {
                     "name": "krnsh.abbreviation",
-                    "match": "\\b(?:ab|ad|al|bd|cl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|aka|ie|ng)\\b"
+                    "match": "\\b(?:ad|al|bd|cl|acl|di|eg|fo|ht|li|me|nt|op|de|pr|ps|qa|td|se|sn|st|vs|ti|ty|ou|er|rt|wg|sh|fg|aka|ie|ng)\\b"
                 }
             ]
         },
@@ -53,7 +53,7 @@
             "patterns": [
                 {
                     "name": "krnsh.explanation.inline",
-                    "match": "╎\\s.*"
+                    "match": "╱\\s.*"
                 }
             ]
         },
@@ -111,7 +111,7 @@
             "patterns": [
                 {
                     "name": "krnsh.representation",
-                    "match": "(☞|✦|✓|✗|⚙|⥣|⥥|⧉|ƒ|⇄|⚛|⋙|►|≡|⚒|≶|𝕋|🗔|⚠|⌘|⛶)"
+                    "match": "(ⓘ|☀|✓|✗|⚙|⥣|⥥|⧉|ƒ|⇄|⚛|≫|⋙|◉|≣|⚒|‴|◨|⍦|↳|⚠|⌘|⛶)"
                 }
             ]
         },
